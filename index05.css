@@ -1,0 +1,71 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: rgb(79, 79, 255);
+}
+.calculator {
+  background-color: rgb(26, 26, 26);
+  width: 320px;
+  height: 540px;
+  border-radius: 20px;
+  overflow: hidden;
+}
+input {
+  background-color: rgb(104, 101, 101);
+  border: none;
+  width: 96%;
+  height: 100px;
+  padding: 10px;
+  color: white;
+  font-size: 40px;
+  outline: none;
+  font-weight: bold;
+  border-radius: 20px;
+}
+.btns {
+  display: grid;
+  grid-template-columns: repeat(4, 60px);
+  grid-template-rows: repeat(5, 60px);
+  gap: 15px;
+  justify-content: center;
+  padding: 20px;
+}
+button {
+  border: none;
+  border-radius: 50%;
+  color: white;
+  font-size: 30px;
+  background-color: rgb(88, 88, 88);
+  font-weight: bolder;
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+}
+.symbols {
+  background-color: rgb(255, 145, 0);
+}
+.screen {
+  background-color: rgb(255, 145, 0);
+  display: flex;
+  justify-content: center;
+  height: 105px;
+}
+.iphone {
+  width: 100%;
+  height: 40px;
+  background-color: rgb(255, 145, 0);
+  display: flex;
+  align-items: center;
+  font-family: cursive;
+  font-size: 25px;
+}
+button:hover {
+  border: 2px solid black;
+  scale: 1.2;
+}
